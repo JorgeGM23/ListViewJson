@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvItemTMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvItemDescripcion"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:text="TªMaxima:" />
+
+        <TextView
+            android:id="@+id/tvITemTMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvItemTMax"
+            android:layout_alignBottom="@+id/tvItemTMax"
+            android:layout_toEndOf="@+id/tvItemDescripcion"
+            android:layout_toRightOf="@+id/tvItemDescripcion"
+            android:text="TªMinima:" />
+
+        <TextView
+            android:id="@+id/tvItemDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvItemFecha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Descripcion" />
+
+        <TextView
+            android:id="@+id/tvItemFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="FECHA:" />
+    </LinearLayout>
+</RelativeLayout>
